@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="text-center">Delete User</h2>
+        <div class="card">
+          <div class="card-body">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th>Name:</th>
+                  <td>{{ user.name }}</td>
+                </tr>
+                <tr>
+                  <th>Address:</th>
+                  <td>{{ user.address }}</td>
+                </tr>
+                <tr>
+                  <th>Email:</th>
+                  <td>{{ user.occupation }}</td>
+                </tr>
+                <!-- Display other user details as needed -->
+              </tbody>
+            </table>
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <button class="btn btn-danger" (click)="backtoget()">GotoBack</button>
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-danger" (click)="delete()">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,25 @@
+<div class="container">
+  <h4 class="getp">All user list that are register !</h4>
+  <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+          <tr>
+              <th class="text-white bg-black">Name</th>
+              <th class="text-white bg-black">Address</th>
+              <th class="text-white bg-black">Occupation</th>
+              <th class="text-white bg-black">Actions</th> <!-- New column for actions -->
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let currentUser of user">
+              <td class=>{{currentUser.name}}</td>
+              <td>{{currentUser.address}}</td>
+              <td>{{currentUser.occupation}}</td>
+              <td class="small">
+                  <!-- Buttons for Update and Delete -->
+                  <button type="button" class="btn btn-outline-primary mr-2" (click)="update(currentUser.id)">Update</button>
+                  <button type="button" class="btn btn-outline-danger"   (click)="delete(currentUser.id)">Delete</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>

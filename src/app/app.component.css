@@ -1,0 +1,13 @@
+
+/* styles.scss */
+.navbar-nav .nav-link.active {
+    background-color: green !important;
+  }
+  
+  .navbar-nav .nav-link {
+    background-color: red !important;
+  }
+  
+body{
+    background-color: #ffc107;
+}

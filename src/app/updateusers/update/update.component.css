@@ -1,0 +1,26 @@
+/* styles.scss */
+.title-form {
+    text-align: center;
+    font-style: italic;
+    color: #d41616e3;
+    margin-bottom: 20px; /* Add margin bottom to create a gap */
+        font-weight: bold; /* Make the text bold */
+  }
+ .form-control{
+    font-style: italic;
+    color: #d41616e3;
+    margin-bottom: 20px; /* Add margin bottom to create a gap */
+        font-weight: bold; /* Make the text bold */
+ } 
+
+ body{
+    background-color: #ffc107;
+  }
+ 
+  
+ .form-group{
+    font-style: italic;
+    color: #d41616e3;
+    margin-bottom: 20px; /* Add margin bottom to create a gap */
+        font-weight: bold; /* Make the text bold */
+ }

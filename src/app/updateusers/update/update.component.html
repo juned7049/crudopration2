@@ -1,0 +1,37 @@
+<h1 class="title-form">Fill this form and add a user </h1>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h6>Fill all the fields</h6>
+        <form (ngSubmit)="update()" #userForm="ngForm" novalidate> <!-- Add ngForm directive and novalidate attribute -->
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" [(ngModel)]="user.name" class="form-control" placeholder="Enter name" required #name="ngModel"> <!-- Add required attribute and reference to ngModel -->
+            <div *ngIf="name.errors?.['required'] && (name.dirty || name.touched)" class="text-danger"> <!-- Use safe navigation operator -->
+              Please fill this field. <!-- Custom error message for required field -->
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" [(ngModel)]="user.address" class="form-control"placeholder="Enter address" required #address="ngModel"> <!-- Add required attribute and reference to ngModel -->
+            <div *ngIf="address.errors?.['required'] && (address.dirty || address.touched)" class="text-danger"> <!-- Use safe navigation operator -->
+              Please fill this field. <!-- Custom error message for required field -->
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" [(ngModel)]="user.occupation" class="form-control" placeholder="Enter occupation" required #occupation="ngModel"> <!-- Add required attribute and reference to ngModel -->
+            <div *ngIf="occupation.errors?.['required'] && (occupation.dirty || occupation.touched)" class="text-danger"> <!-- Use safe navigation operator -->
+              Please fill this field. <!-- Custom error message for required field -->
+            </div>
+          </div>
+  
+          <button type="submit" class="btn btn-primary mt-2" [disabled]="!userForm.valid">Submit</button> 
+       
+        </form>
+      </div>
+    </div>
+  </div>
